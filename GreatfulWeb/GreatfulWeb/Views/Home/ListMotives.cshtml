@@ -1,0 +1,34 @@
+﻿@model List<GreatfulWeb.Model.Db.Model.Greatful>
+
+@{
+    ViewBag.Title = "ListMotives";
+}
+
+<h2>ListMotives</h2>
+
+<div>
+    <h4>Greatful</h4>
+    <hr />
+    
+    <dl class="dl-horizontal">
+        @foreach (var m in Model)
+        {
+            <dt>
+                Motivo
+            </dt>
+
+            <dd>
+                @m.GreatfulFor
+            </dd>
+
+            <dt>
+                Data
+            </dt>
+
+            <dd>
+                @m.Date
+            </dd>
+        }
+        </dl>
+        
+</div>

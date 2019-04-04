@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+
+
+<div class="fulljar">
+    <div class="top"></div>
+    <div class="hole"></div>
+    <div class="jar">
+        <div class="label">GRATIDÃO</div>
+        <div class="notes">
+
+        </div>
+    </div>
+</div>
+<a href="@Url.Action("GreatfulFor", "Home")"
+   class="btn btn-info">
+    <i class="glyphicon glyphicon-hand-up"> Agradecer</i>
+</a>
+
+<a href="@Url.Action("ListMotives", "Home")"
+   class="btn btn-warning">
+    <i class="glyphicon glyphicon-paperclip"> Notas de Agradecimento</i>
+</a>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
+<script src="~/Scripts/main.js"></script>
