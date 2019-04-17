@@ -1,30 +1,38 @@
 ﻿const fullJar = document.querySelector(".fulljar");
-//const secfullJar = document.querySelector(".secfullJar");
-//const secjarTop = document.querySelector(".sectop");
 const jarTop = document.querySelector(".top");
-//const bodyJar = document.querySelector(".jar");
-//const note1 = document.querySelectorAll(".note1");
-//const note2 = document.querySelectorAll(".note2");
-//const note3 = document.querySelectorAll(".note3");
-//const btn = document.querySelector("#add");
-//const gly = document.querySelector("#hand");
+/*const g = document.querySelector("#g");
+const r = document.querySelector("#r");
+const a = document.querySelector("#a");
+const t = document.querySelector("#t");
+const i = document.querySelector("#i");
+const d = document.querySelector("#d");
+const a2 = document.querySelector("#a2");
+const o = document.querySelector("#o");*/
+
+const heart = document.querySelector(".heart");
+
+TweenMax.to(heart, 0.3, { scale: 1.1, repeat: -1 })
+
+
 
 const tl = new TimelineMax();
 
 
-    tl.to(fullJar, 0.05,
+tl.to(fullJar, 0.05,
         { x: "+=20", yoyo: true, repeat: 10 },
-        0.3).to(jarTop, 0.2, {
+        1).to(jarTop, 0.2, {
             x: 91, rotation: 10, ease: Power2.easeOut,
-        }, 0.5
+        }, 1.02
         ).to(jarTop, 0.2, {
             y: 108,
             rotation: 90
-        }, 0.7).to(jarTop, 0.2, {
+    }, 1.04).to(jarTop, 0.2, {
             x: 89,
             rotation: 45
-        }, 0.9)
+    }, 1.06)
         .to(alert, 1, { autoAlpha: 1, scale: 1.2 });
+
+    
 
 //TweenMax.to(gly, { autoAlpha: 1, scale: 1.2, delay: 1 });
 

@@ -3,44 +3,47 @@
 
 }
 
-<div class="container">
+<div class="row" style="margin-left:35%;">
+    <div class="col-sm-2"><h2>GRATIDAO</h2></div>
+    <div class="col-sm-2 heart"></div>
+</div>
+</br></br>
+<div style="margin-left:35%;" class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <div style="margin:0;" class="fulljar">
                 <div class="top"></div>
                 <div class="hole"></div>
                 <div class="jar">
                     <div class="label">GRATIDÃO</div>
-                    <!--<div class="notes">
-            <div class="note note1">Pelo dia</div>
-            <div class="note note2">Família</div>
-            <div class="note note3">Pelo app</div>
-            <div class="note note1">Pelo dia</div>
-            <div class="note note2">Família</div>
-            <div class="note note3">Pelo app</div>
-            <div class="note note1">Pelo dia</div>
-            <div class="note note2">Família</div>
-            <div class="note note3">Pelo app</div>
-        </div>-->
                 </div>
+            </div>
         </div>
-        </div>
-        <div class="col">
-            <a href="@Url.Action("GreatfulFor", "Home")"
-               class="btn btn-info">
-                <i class="glyphicon glyphicon-hand-up"> Agradecer</i>
-            </a>
+        <div class="col-sm-2">
+            <div class="col-md-12">
+                </br></br>
+                <a href="@Url.Action("GreatfulFor", "Home")"
+                   class="btn btn-info">
+                    <i class="glyphicon glyphicon-hand-up"> Agradecer</i>
+                </a>
+            </div>
 
-            <a href="@Url.Action("ListMotives", "Home")"
-               class="btn btn-warning">
-                <i class="glyphicon glyphicon-paperclip"> Notas</i>
-            </a>
+            <div class="col-md-12">
+                </br>
+                <a href="@Url.Action("ListMotives", "Home")"
+                   class="btn btn-warning">
+                    <i class="glyphicon glyphicon-paperclip"> Notas</i>
+                </a>
+            </div>
+
+            </br></br>
+
         </div>
     </div>
 </div>
 
-    
-        
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
-        <script src="~/Scripts/main.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
+<script src="~/Scripts/main.js"></script>
