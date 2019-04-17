@@ -2,6 +2,7 @@
 using NHibernate.Mapping.ByCode.Conformist;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace GreatfulWeb.Model.Db.Model
     {
         public virtual int Id { get; set; }
         public virtual string GreatfulFor { get; set; }
+        [DisplayFormat(DataFormatString = "{dd/MM/yyy}", ApplyFormatInEditMode = true)]
         public virtual DateTime Date { get; set; }
     }
 
