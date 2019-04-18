@@ -11,9 +11,9 @@ namespace GreatfulWeb.Model.Db.Model
 {
     public class Greatful
     {
+        [Required(ErrorMessage ="Campo Obrigatório")]
         public virtual int Id { get; set; }
         public virtual string GreatfulFor { get; set; }
-        [DisplayFormat(DataFormatString = "{dd/MM/yyy}", ApplyFormatInEditMode = true)]
         public virtual DateTime Date { get; set; }
     }
 

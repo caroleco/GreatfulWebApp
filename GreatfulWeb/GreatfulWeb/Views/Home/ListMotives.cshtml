@@ -9,90 +9,23 @@
 <div>
     <hr />
     <div class="row" id="notes">
-            @foreach (var m in Model)
-            {
-                <div class="col-sm-1" style="margin-left:10px;">
-                    <p>@m.GreatfulFor</p>
-                    <p>@m.Date.ToString("dd/MM/yyyy")</p>
-                </div>
-            }
-
-    </div>
-        <!--<table style="width:25%;" class="table table-bordered table-condensed table-responsive">
-            <thead>
-                <tr>
-                    <th>Motivo<i id="hand" class="glyphicon glyphicon-hand-up"></i></th>
-                    <th>Data</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var m in Model)
-                {
-                    <tr>
-                        <td>@m.GreatfulFor</td>
-                        <td>@m.Date.ToString("dd/MM/yyyy")</td>
-                    </tr>
-                }
-
-            </tbody>
-        </table>-->
-
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
-    <script src="~/Scripts/listpage.js"></script>
-
-    <style>
-        #notes div {
-            position: relative;
-            width: 15%;
-            min-height: 20%;
-            margin: 10px auto;
-            padding: 60px 15px 15px 15px;
-            -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.5);
-            -moz-box-shadow: 0 2px 12px rgba(0,0,0,.5);
-            box-shadow: 0 1px 2px #000;
-            -webkit-transform: rotate(-.5deg);
-            -moz-transform: rotate(-.5deg);
-            -o-transform: rotate(-.5deg);
+        @foreach (var m in Model)
+        {
+            <div class="col-sm-1" style="margin-left:10px;">
+                <i class="glyphicon glyphicon-hand-up"></i>
+                <p class="motive">@m.GreatfulFor</p>
+                <p>@m.Date.ToString("dd/MM/yyyy")</p>
+            </div>
         }
 
-            #notes div:nth-child(even) {
-                -webkit-transform: rotate(.5deg);
-                -moz-transform: rotate(.5deg);
-                -o-transform: rotate(.5deg);
-            }
+    </div>
+</div>
+</br></br></br></br>
 
-            #notes div p {
-                text-align: center;
-                font: normal normal normal 15px 'Reenie Beanie', Helvetica, Arial, sans-serif;
-                color: #000;
-                text-shadow: white 1px 1px 0px;
-                overflow: hidden;
-            }
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
 
-            #notes div::before {
-                content: ' ';
-                display: block;
-                position: absolute;
-                left: 0px;
-                top: -15px;
-                width: 75px;
-                height: 25px;
-                z-index: 2;
-                background-color: rgba(243,245,228,0.5);
-                border: 2px solid rgba(255,255,255,0.5);
-                -webkit-box-shadow: 0 0 5px #888;
-                -moz-box-shadow: 0 0 5px #888;
-                box-shadow: 2px 2px 2px #000;
-                -webkit-transform: rotate(-6deg);
-                -moz-transform: rotate(-6deg);
-                -o-transform: rotate(-6deg);
-            }
 
-            #notes div:nth-child(even)::before {
-                -webkit-transform: rotate(6deg);
-                -moz-transform: rotate(6deg);
-                -o-transform: rotate(6deg);
-            }
-    </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
+<script src="~/Scripts/listpage.js"></script>

@@ -20,7 +20,7 @@
                     @Html.HiddenFor(model => model.Id)
 
                     <div class="form-group">
-                        <label class="control-label col-md-2">Por:</label>
+                        <label class="control-label col-md-2">Motivo:</label>
                         <div class="col-md-10">
                             @Html.EditorFor(model => model.GreatfulFor, new { htmlAttributes = new { @class = "form-control" } })
                             @Html.ValidationMessageFor(model => model.GreatfulFor, "", new { @class = "text-danger" })
@@ -30,7 +30,7 @@
                     <div class="form-group">
                         <label class="control-label col-md-2">Data:</label>
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.TextBoxFor(model => model.Date, new Dictionary<String, object>() { { "type", "date" }, { "class", "form-control" } })
                             @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
                         </div>
                     </div>
@@ -50,15 +50,6 @@
                     <div class="jar">
                         <div class="label">GRATIDÃO</div>
                         <div class="notes">
-
-                            <!--<div class="note note2">Família</div>
-                <div class="note note3">Pelo app</div>
-                <div class="note note1">Pelo dia</div>
-                <div class="note note2">Família</div>
-                <div class="note note3">Pelo app</div>
-                <div class="note note1">Pelo dia</div>
-                <div class="note note2">Família</div>
-                <div class="note note3">Pelo app</div>-->
                         </div>
                     </div>
                 </div>
